@@ -1,5 +1,8 @@
 {
   "resources": [
+    {"id":{"name":"objLoveMeter","path":"objects/objLoveMeter/objLoveMeter.yy",},"order":0,},
+    {"id":{"name":"sprLoveMeterMarker","path":"sprites/sprLoveMeterMarker/sprLoveMeterMarker.yy",},"order":1,},
+    {"id":{"name":"sprLoveMeter","path":"sprites/sprLoveMeter/sprLoveMeter.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
