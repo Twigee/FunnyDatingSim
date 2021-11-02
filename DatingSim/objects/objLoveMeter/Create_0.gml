@@ -1,2 +1,2 @@
-global.LoveMeter=2
+global.LoveMeter=2.5
 lmdraw=global.LoveMeter
