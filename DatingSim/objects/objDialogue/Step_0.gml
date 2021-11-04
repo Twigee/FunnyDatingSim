@@ -3,10 +3,6 @@ var input = -1;
 for(var i=0; i<choices; i++){
     if story[cur_story]==""
 	{
-		if (keyboard_check_pressed(ord(string(i+1)))){
-		    input = i;
-		    break;
-		}
 		var strin=string(choice[cur_story,0])
 		if point_in_rectangle(mouse_x,mouse_y,88-string_width(strin)+8,152-string_width(strin)+8,88+string_width(strin)+8,152+string_width(strin)+8) and device_mouse_check_button_pressed(0,mb_left)
 		{
