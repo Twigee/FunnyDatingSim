@@ -1,3 +1,6 @@
+var img=port[cur_story]
+draw_sprite(sprPortraits,img,160,127)
+
 draw_sprite(sprTextbox,0,16,128)
 
 //properties

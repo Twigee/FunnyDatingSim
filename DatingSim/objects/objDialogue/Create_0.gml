@@ -4,6 +4,12 @@ char = 0;
 text_speed = 1;
 choices = 2;
 
+var i;
+for (i = 0; i < 1024; i += 1)
+{
+	port[i]=0
+}
+
 story[0] = "Hi I'm a random girl lol";
 path[ 0,0] = 1;
 
@@ -13,14 +19,15 @@ choice[1,1] = "Be a jerk";
 path[  1,0] = 2;
 path[  1,1] = 3;
 
-story[2] = "Oh wow you're very nice :smirk:";
-path[ 2,0] = 1;
+story[ 2] = "Oh wow you're very nice :smirk:";
+path[  2,0] = 1;
 
-story[3] = "What a fucking jerk!";
-path[ 3,0] = 4;
+story[ 3] = "What a fucking jerk!";
+path[  3,0] = 4;
+port[  3]=1
 
-story[4] = "Let's get married!";
-path[ 4,0] = 1;
+story[ 4] = "Let's get married!";
+path[  4,0] = 1;
 
 question=false
 

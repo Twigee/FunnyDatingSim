@@ -6,6 +6,7 @@
     {"id":{"name":"sprTextbox","path":"sprites/sprTextbox/sprTextbox.yy",},"order":2,},
     {"id":{"name":"objDialogue","path":"objects/objDialogue/objDialogue.yy",},"order":1,},
     {"id":{"name":"fMain","path":"fonts/fMain/fMain.yy",},"order":0,},
+    {"id":{"name":"sprPortraits","path":"sprites/sprPortraits/sprPortraits.yy",},"order":4,},
     {"id":{"name":"sprMouse","path":"sprites/sprMouse/sprMouse.yy",},"order":3,},
     {"id":{"name":"sprLoveMeter","path":"sprites/sprLoveMeter/sprLoveMeter.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
