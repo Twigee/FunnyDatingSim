@@ -21,13 +21,17 @@ path[  1,1] = 3;
 
 story[ 2] = "Oh wow you're very nice :smirk:";
 path[  2,0] = 1;
+port[  2]=2
 
 story[ 3] = "What a fucking jerk!";
 path[  3,0] = 4;
-port[  3]=1
+port[  3]=12
 
 story[ 4] = "Let's get married!";
 path[  4,0] = 1;
+port[  4]=2
+
+//3 12 2
 
 question=false
 
