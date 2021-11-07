@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"sprBitBob","path":"sprites/sprBitBob/sprBitBob.yy",},"order":5,},
     {"id":{"name":"fMain2","path":"fonts/fMain2/fMain2.yy",},"order":1,},
     {"id":{"name":"objLoveMeter","path":"objects/objLoveMeter/objLoveMeter.yy",},"order":0,},
     {"id":{"name":"sprLoveMeterMarker","path":"sprites/sprLoveMeterMarker/sprLoveMeterMarker.yy",},"order":1,},
