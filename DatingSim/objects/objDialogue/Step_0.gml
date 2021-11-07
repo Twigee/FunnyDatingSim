@@ -4,13 +4,13 @@ for(var i=0; i<choices; i++){
     if story[cur_story]==""
 	{
 		var strin=string(choice[cur_story,0])
-		if point_in_rectangle(mouse_x,mouse_y,88-string_width(strin)+8,152-string_width(strin)+8,88+string_width(strin)+8,152+string_width(strin)+8) and device_mouse_check_button_pressed(0,mb_left)
+		if (point_in_rectangle(mouse_x,mouse_y,88-string_width(strin)+8,152-string_width(strin)+8,88+string_width(strin)+8,152+string_width(strin)+8) and device_mouse_check_button_pressed(0,mb_left)) or keyboard_check_pressed(vk_left)
 		{
 			input=0
 			break;
 		}
 		var strin=string(choice[cur_story,1])
-		if point_in_rectangle(mouse_x,mouse_y,232-string_width(strin)+8,152-string_width(strin)+8,232+string_width(strin)+8,152+string_width(strin)+8) and device_mouse_check_button_pressed(0,mb_left)
+		if (point_in_rectangle(mouse_x,mouse_y,232-string_width(strin)+8,152-string_width(strin)+8,232+string_width(strin)+8,152+string_width(strin)+8) and device_mouse_check_button_pressed(0,mb_left)) or keyboard_check_pressed(vk_right)
 		{
 			input=1
 			global.LoveMeter-=1
@@ -20,9 +20,10 @@ for(var i=0; i<choices; i++){
 	}
 	else
 	{
-		if keyboard_check_pressed(vk_space) or (point_in_rectangle(mouse_x,mouse_y,16,128,304,176) and device_mouse_check_button_pressed(0,mb_left)) input=0
+		if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right) or (point_in_rectangle(mouse_x,mouse_y,16,128,304,176) and device_mouse_check_button_pressed(0,mb_left)) input=0
 	}
 }
+
 //set story
 var str_len = string_length(story[cur_story]);
 if (input!=-1 && char>=str_len){
