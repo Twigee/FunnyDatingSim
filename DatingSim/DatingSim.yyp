@@ -13,6 +13,7 @@
     {"id":{"name":"fName","path":"fonts/fName/fName.yy",},"order":3,},
     {"id":{"name":"sprMouse","path":"sprites/sprMouse/sprMouse.yy",},"order":3,},
     {"id":{"name":"sprDialogueFont","path":"sprites/sprDialogueFont/sprDialogueFont.yy",},"order":7,},
+    {"id":{"name":"sprBackground","path":"sprites/sprBackground/sprBackground.yy",},"order":10,},
     {"id":{"name":"sprNamebox","path":"sprites/sprNamebox/sprNamebox.yy",},"order":9,},
     {"id":{"name":"sprMSFont","path":"sprites/sprMSFont/sprMSFont.yy",},"order":8,},
     {"id":{"name":"sprLoveMeter","path":"sprites/sprLoveMeter/sprLoveMeter.yy",},"order":0,},

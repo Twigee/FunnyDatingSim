@@ -1,1 +1,1 @@
-audio_play_sound(bgmDating,1,true)
+//audio_play_sound(bgmDating,1,true)
