@@ -1,5 +1,0 @@
-lmdraw+=(floor(global.LoveMeter)-lmdraw)*0.5
-draw_sprite(sprLoveMeterMarker,floor(global.LoveMeter),120+(lmdraw*16),4)
-draw_sprite(sprLoveMeter,0,104,4)
-if point_in_rectangle(mouse_x,mouse_y,104,4,104+18,20) and device_mouse_check_button_pressed(0,mb_left) and global.LoveMeter>0 global.LoveMeter=floor(global.LoveMeter)-1
-if point_in_rectangle(mouse_x,mouse_y,198,4,198+18,20) and device_mouse_check_button_pressed(0,mb_left) and global.LoveMeter<4 global.LoveMeter=floor(global.LoveMeter)+1

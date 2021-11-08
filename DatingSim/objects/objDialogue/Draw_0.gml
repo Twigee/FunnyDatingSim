@@ -1,4 +1,14 @@
-draw_sprite(sprPortraits,port[cur_story],160,128)
+if port[cur_story]!=-2 and port[cur_story]!=-1
+{
+	draw_sprite(sprPortraits,port[cur_story],160,128)
+	pos2+=(0-pos2)*0.25
+}
+if port[cur_story]=-1 por_alpha+=(1-por_alpha)*0.25
+else por_alpha+=(0-por_alpha)*0.25
+
+draw_set_alpha(por_alpha)
+draw_sprite(sprDarkportrait,0,160,128)
+draw_set_alpha(1)
 
 if speak[cur_story]!=""
 {
@@ -20,7 +30,7 @@ if speak[cur_story]!=""
 	draw_set_color(c_cyn)
 	draw_text(20,114,str)
 }
-draw_sprite(sprTextbox2,0,0,128)
+draw_sprite(sprTextbox2,0,0,128+pos1)
 
 //properties
 draw_set_font(fMain)
@@ -65,4 +75,12 @@ if (char>=str_len) and story[cur_story]==""{
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_top)
 }
-else {char += text_speed;}
+else if pos1==0 {char += text_speed;}
+
+if keyboard_check_pressed(vk_f1)
+{
+	var num=get_string("Go to:",0,)
+	cur_story=num
+}
+
+pos1+=(0-pos1)*0.25
