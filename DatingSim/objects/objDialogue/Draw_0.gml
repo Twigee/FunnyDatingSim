@@ -10,6 +10,31 @@ draw_set_alpha(por_alpha)
 draw_sprite(sprDarkportrait,0,160,128)
 draw_set_alpha(1)
 
+if cur_story=8 and !audio_is_playing(bgmDating) audio_play_sound(bgmDating,1,true)
+if cur_story>=8
+{
+	var vol=audio_sound_get_gain(bgmDating)
+	if vol<1 vol+=0.005
+	if global.bgm==false vol=0
+	audio_sound_gain(bgmDating,vol,1)
+}
+else audio_sound_gain(bgmDating,0,1)
+
+if cur_story<8
+{
+	var vol=audio_sound_get_gain(bgmRain)
+	if vol<1 vol+=0.01
+	if global.bgm==false vol=0
+	audio_sound_gain(bgmRain,vol,1)
+}
+if cur_story>=8
+{
+	var vol=audio_sound_get_gain(bgmRain)
+	if vol>0 vol-=0.005
+	if global.bgm==false vol=0
+	audio_sound_gain(bgmRain,vol,1)
+}
+
 if speak[cur_story]!=""
 {
 	draw_set_font(fName)
