@@ -1,3 +1,5 @@
+if draw_stuff=true
+{
 if port[cur_story]!=-2 and port[cur_story]!=-1
 {
 	draw_sprite(sprPortraits,port[cur_story],160,128)
@@ -9,7 +11,7 @@ else por_alpha+=(0-por_alpha)*0.25
 draw_set_alpha(por_alpha)
 draw_sprite(sprDarkportrait,0,160,128)
 draw_set_alpha(1)
-
+}
 if cur_story=8 and !audio_is_playing(bgmDating) audio_play_sound(bgmDating,1,true)
 if cur_story>=8
 {
@@ -19,7 +21,6 @@ if cur_story>=8
 	audio_sound_gain(bgmDating,vol,1)
 }
 else audio_sound_gain(bgmDating,0,1)
-
 if cur_story<8
 {
 	var vol=audio_sound_get_gain(bgmRain)
@@ -34,7 +35,8 @@ if cur_story>=8
 	if global.bgm==false vol=0
 	audio_sound_gain(bgmRain,vol,1)
 }
-
+if draw_stuff=true
+{
 if speak[cur_story]!=""
 {
 	draw_set_font(fName)
@@ -56,7 +58,7 @@ if speak[cur_story]!=""
 	draw_text(20,114,str)
 }
 draw_sprite(sprTextbox2,0,0,128+pos1)
-
+}
 //properties
 draw_set_font(fMain)
 var margin = 21;
@@ -87,12 +89,12 @@ if (char>=str_len) and story[cur_story]==""{
 	draw_set_font(fOptions)
 	
 	var strin=string(choice[cur_story,0])
-	if point_in_rectangle(mouse_x,mouse_y,88-string_width(strin)+8,152-string_width(strin)+8,88+string_width(strin)+8,152+string_width(strin)+8) draw_set_color(c_ylo)
+	if point_in_rectangle(mouse_x,mouse_y,88-string_width(strin),152-string_height(strin),88+string_width(strin),152+string_height(strin)) draw_set_color(c_ylo)
 	else draw_set_color(c_wht)
 	draw_text_ext(88, 152, string(choice[cur_story,0]), -1, width);
 	
 	var strin=string(choice[cur_story,1])
-	if point_in_rectangle(mouse_x,mouse_y,232-string_width(strin)+8,152-string_width(strin)+8,232+string_width(strin)+8,152+string_width(strin)+8) draw_set_color(c_ylo)
+	if point_in_rectangle(mouse_x,mouse_y,232-string_width(strin),152-string_height(strin),232+string_width(strin),152+string_height(strin)) draw_set_color(c_ylo)
 	else draw_set_color(c_wht)
 	draw_text_ext(232,152, string(choice[cur_story,1]), -1, width);
 	
@@ -106,6 +108,8 @@ if keyboard_check_pressed(vk_f1)
 {
 	var num=get_string("Go to:",0,)
 	cur_story=num
+	char=0
 }
+if keyboard_check_pressed(vk_f2) draw_stuff = !draw_stuff
 
 pos1+=(0-pos1)*0.25

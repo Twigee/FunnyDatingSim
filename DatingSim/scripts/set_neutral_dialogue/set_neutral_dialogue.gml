@@ -115,14 +115,14 @@ res[   19,0]=3;
 res[   19,1]=4;
 
 story[ 20] = "Oh, what a pretty name!";
-path[  20,0] = 22;
+path[  20,0] = 27;
 speak[ 20]="Holly"
 port[  20]=2
 
 story[ 21] = "...";
 path[  21,0] = 22;
 speak[ 21]="Holly"
-port[  21]=22
+port[  21]=21
 
 story[ 22] = "Aren't you going to tell me your name?";
 path[  22,0] = 23;
@@ -153,8 +153,76 @@ res[   23,0]=3;
 res[   23,1]=4;
 
 story[ 24] = "Sure...\n..."+string(famous_person)+" would totally come to this coffee shop every "+string(day)+" after acting in a movie.";
-path[  24,0] = 23;
+path[  24,0] = 25;
 speak[ 24]="Holly"
-port[  24]=0
+port[  24]=4
 
+story[ 25] = "Perhaps we started with the wrong foot, I'll just ask something else...";
+path[  25,0] = 26;
+speak[ 25]="Holly"
+port[  25]=22
+
+story[ 26] = "So, what's your profession?";
+path[  26,0] = 29;
+speak[ 26]="Holly"
+port[  26]=0
+
+story[ 27] = "Say, what's your profession?";
+path[  27,0] = 28;
+speak[ 27]="Holly"
+port[  27]=1
+
+story[ 28] = "I know it's a random question but...\nI just want to meet you.";
+path[  28,0] = 29;
+speak[ 28]="Holly"
+port[  28]=0
+
+story[ 29] = "";
+port[  29]=22
+choice[29,0] = "(Tell her)";
+choice[29,1] = "What do you want?\nMy social\nsecurity number?";
+path[  29,0] = 33;
+path[  29,1] = 30;
+res[   29,0]=3;
+res[   29,1]=4;
+
+story[ 30] = "No I don't!\nI just want to have a nice conversation here.\nI'm having a terrible day and I just need someone to talk to.";
+path[  30,0] = 31;
+speak[ 30]="Holly"
+port[  30]=12
+
+story[ 31] = "And guess what? It's getting worse!";
+path[  31,0] = 32;
+speak[ 31]="Holly"
+port[  31]=7
+
+story[ 32] = "You know what? I don't care...";
+path[  32,0] = -1;
+speak[ 32]="Holly"
+port[  32]=6
+
+story[ 33] = "Oh so you're a bank clerk?";
+path[  33,0] = 34;
+speak[ 33]="Holly"
+port[  33]=3
+
+story[ 34] = "That sounds interesting!";
+path[  34,0] = 35;
+speak[ 34]="Holly"
+port[  34]=2
+
+story[ 35] = "I bet that you meet new people every day!";
+path[  35,0] = 36;
+speak[ 35]="Holly"
+port[  35]=1
+
+story[ 36] = "...Even if you cancel some people's bank accounts...";
+path[  36,0] = 37;
+speak[ 36]="Holly"
+port[  36]=11
+
+story[ 37] = "You know what? Let's just forget it.";
+path[  37,0] = 37;
+speak[ 37]="Holly"
+port[  37]=2
 }

@@ -5,13 +5,13 @@ for(var i=0; i<choices; i++){
     if story[cur_story]==""
 	{
 		var strin=string(choice[cur_story,0])
-		if (point_in_rectangle(mouse_x,mouse_y,88-string_width(strin)+8,152-string_width(strin)+8,88+string_width(strin)+8,152+string_width(strin)+8) and device_mouse_check_button_pressed(0,mb_left)) or keyboard_check_pressed(vk_left)
+		if (point_in_rectangle(mouse_x,mouse_y,88-string_width(strin),152-string_height(strin),88+string_width(strin),152+string_height(strin)) and device_mouse_check_button_pressed(0,mb_left)) or keyboard_check_pressed(vk_left)
 		{
 			input=0
 			break;
 		}
 		var strin=string(choice[cur_story,1])
-		if (point_in_rectangle(mouse_x,mouse_y,232-string_width(strin)+8,152-string_width(strin)+8,232+string_width(strin)+8,152+string_width(strin)+8) and device_mouse_check_button_pressed(0,mb_left)) or keyboard_check_pressed(vk_right)
+		if (point_in_rectangle(mouse_x,mouse_y,232-string_width(strin),152-string_height(strin),232+string_width(strin),152+string_height(strin)) and device_mouse_check_button_pressed(0,mb_left)) or keyboard_check_pressed(vk_right)
 		{
 			input=1
 			break;

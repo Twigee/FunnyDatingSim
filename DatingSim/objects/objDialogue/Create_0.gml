@@ -7,7 +7,7 @@ char = 0;
 text_speed = 1;
 choices = 2;
 
-global.bgm=true
+global.bgm=false
 
 var i;
 for (i = 0; i < 1024; i += 1)
@@ -67,3 +67,5 @@ audio_sound_gain(bgmDating,0,1)
 por_alpha=0
 pos1=45
 pos2=-45
+
+draw_stuff=true
