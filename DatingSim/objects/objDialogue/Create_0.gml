@@ -7,7 +7,7 @@ char = 0;
 text_speed = 1;
 choices = 2;
 
-global.bgm=false
+global.bgm=true
 
 var i;
 for (i = 0; i < 1024; i += 1)

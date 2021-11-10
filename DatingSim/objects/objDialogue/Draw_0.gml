@@ -106,7 +106,7 @@ else if pos1==0 {char += text_speed;}
 
 if keyboard_check_pressed(vk_f1)
 {
-	var num=get_string("Go to:",0,)
+	var num=get_string("Go to:"," ")
 	cur_story=num
 	char=0
 }

@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function set_neutral_dialogue(){
-
+#region introduction
 story[ 0] = "It's a rainy afternoon";
 path[  0,0] = 1;
 speak[ 0]=""
@@ -65,6 +65,7 @@ story[ 11] = "Not much of a talker, are you?";
 path[  11,0] = 12;
 speak[ 11]="???"
 port[  11]=0
+#endregion
 
 story[ 12] = "";
 port[  12]=0
@@ -75,11 +76,14 @@ path[  12,1] = 13;
 res[   12,0]=3;
 res[   12,1]=4;
 
+#region Yeah and?
 story[ 13] = "No need to be rude...";
 path[  13,0] = 18;
 speak[ 13]="???"
 port[  13]=5
+#endregion
 
+#region Sorry! I'm just a bit distracted
 story[ 14] = "Oh, sorry!";
 path[  14,0] = 15;
 speak[ 14]="???"
@@ -104,6 +108,7 @@ story[ 18] = "I'm Holly.";
 path[  18,0] = 19;
 speak[ 18]="Holly"
 port[  18]=0
+#endregion
 
 story[ 19] = "";
 port[  19]=0
@@ -114,11 +119,13 @@ path[  19,1] = 21;
 res[   19,0]=3;
 res[   19,1]=4;
 
+#region (Say your name)
 story[ 20] = "Oh, what a pretty name!";
 path[  20,0] = 27;
 speak[ 20]="Holly"
 port[  20]=2
-
+#endregion
+#region ...cool
 story[ 21] = "...";
 path[  21,0] = 22;
 speak[ 21]="Holly"
@@ -161,6 +168,7 @@ story[ 25] = "Perhaps we started with the wrong foot, I'll just ask something el
 path[  25,0] = 26;
 speak[ 25]="Holly"
 port[  25]=22
+#endregion
 
 story[ 26] = "So, what's your profession?";
 path[  26,0] = 29;
@@ -175,7 +183,7 @@ port[  27]=1
 story[ 28] = "I know it's a random question but...\nI just want to meet you.";
 path[  28,0] = 29;
 speak[ 28]="Holly"
-port[  28]=0
+port[  28]=2
 
 story[ 29] = "";
 port[  29]=22
@@ -222,7 +230,94 @@ speak[ 36]="Holly"
 port[  36]=11
 
 story[ 37] = "You know what? Let's just forget it.";
-path[  37,0] = 37;
+path[  37,0] = 38;
 speak[ 37]="Holly"
 port[  37]=2
+
+story[ 38] = "";
+port[  38]=22
+choice[38,0] = "Let's talk\nabout you";
+choice[38,1] = "PLACEHOLDER";
+path[  38,0] = 39;
+path[  38,1] = 30;
+res[   38,0]=3;
+res[   38,1]=4;
+
+#region let's talk about you
+story[ 39] = "Oh me?\nWell I'm a software programmer.";
+path[  39,0] = 40;
+speak[ 39]="Holly"
+port[  39]=2
+
+story[ 40] = "";
+port[  40]=1
+choice[40,0] = "Oh so you can\nhack my\nworst enemy?";
+choice[40,1] = "Finally\nsomebody can fix\nmy printer!";
+path[  40,0] = 41;
+path[  40,1] = 30;
+res[   40,0]=3;
+res[   40,1]=4;
+
+story[ 41] = "Hahahahaha! Well I won't because that's illegal!";
+path[  41,0] = 42;
+speak[ 41]="Holly"
+port[  41]=2
+
+story[ 42] = "I never said I couldn't though...";
+path[  42,0] = 43;
+speak[ 42]="Holly"
+port[  42]=11
+
+story[ 43] = "Just kidding!";
+path[  43,0] = 44;
+speak[ 43]="Holly"
+port[  43]=2
+
+story[ 44] = "I work at Neosoft, doing some bugfixing, but sometimes I also make cool stuff.";
+path[  44,0] = 45;
+speak[ 44]="Holly"
+port[  44]=1
+
+story[ 45] = "Ever played the dragon minigame when you're offline and you want to use the web browser?";
+path[  45,0] = 46;
+speak[ 45]="Holly"
+port[  45]=1
+
+story[ 46] = "";
+port[  46]=1
+choice[46,0] = "Yeah\nIt's a blast!";
+choice[46,1] = "The one that\nsucks?";
+path[  46,0] = 50;
+path[  46,1] = 47;
+res[   46,0]=5;
+res[   46,1]=6;
+
+#region The one that sucks?
+story[ 47] = "...yeah that one, it was made by a co-worker...";
+path[  47,0] = 48;
+speak[ 47]="Holly"
+port[  47]=20
+
+story[ 48] = "...";
+path[  48,0] = 49;
+speak[ 48]="Holly"
+port[  48]=21
+
+story[ 49] = "...";
+path[  49,0] = -1;
+speak[ 49]="Holly"
+port[  49]=20
+#endregion
+#region Yeah it's a blast!
+story[ 50] = "Wait, you like it?";
+path[  50,0] = 51;
+speak[ 50]="Holly"
+port[  50]=8
+
+story[ 51] = "Wow! Thanks!";
+path[  51,0] = 52;
+speak[ 51]="Holly"
+port[  51]=1
+#endregion
+#endregion
 }
