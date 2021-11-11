@@ -193,7 +193,7 @@ path[  29,0] = 33;
 path[  29,1] = 30;
 res[   29,0]=3;
 res[   29,1]=4;
-
+#region what do you want?
 story[ 30] = "No I don't!\nI just want to have a nice conversation here.\nI'm having a terrible day and I just need someone to talk to.";
 path[  30,0] = 31;
 speak[ 30]="Holly"
@@ -205,10 +205,11 @@ speak[ 31]="Holly"
 port[  31]=7
 
 story[ 32] = "You know what? I don't care...";
-path[  32,0] = -1;
+path[  32,0] =38;
 speak[ 32]="Holly"
 port[  32]=6
-
+#endregion
+#region tell her
 story[ 33] = "Oh so you're a bank clerk?";
 path[  33,0] = 34;
 speak[ 33]="Holly"
@@ -233,15 +234,15 @@ story[ 37] = "You know what? Let's just forget it.";
 path[  37,0] = 38;
 speak[ 37]="Holly"
 port[  37]=2
-
+#endregion
 story[ 38] = "";
 port[  38]=22
-choice[38,0] = "Let's talk\nabout you";
-choice[38,1] = "PLACEHOLDER";
+choice[38,0] = "What about\nyou?";
+choice[38,1] = "So you're\nhomeless?";
 path[  38,0] = 39;
-path[  38,1] = 30;
+path[  38,1] = 52;
 res[   38,0]=3;
-res[   38,1]=4;
+res[   38,1]=6;
 
 #region let's talk about you
 story[ 39] = "Oh me?\nWell I'm a software programmer.";
@@ -320,4 +321,44 @@ speak[ 51]="Holly"
 port[  51]=1
 #endregion
 #endregion
+
+story[ 52] = "Really what is wrong with you?\nYou're such a jerk!";
+path[  52,0] = 53;
+speak[ 52]="Holly"
+port[  52]=12
+
+story[ 53] = "For your information. I DO have a proper job.";
+path[  53,0] = 54;
+speak[ 53]="Holly"
+port[  53]=16
+
+story[ 54] = "I work at Neosoft.";
+path[  54,0] = 55;
+speak[ 54]="Holly"
+port[  54]=12
+
+story[ 55] = "...";
+path[  55,0] = 56;
+speak[ 55]="Holly"
+port[  55]=14
+
+story[ 56] = "Alright fine. There's some financial issues in my department, and they might fire me.";
+path[  56,0] = 57;
+speak[ 56]="Holly"
+port[  56]=15
+
+story[ 57] = "But I heard they need more people in tech support, so at least I could try moving there.";
+path[  57,0] = 58;
+speak[ 57]="Holly"
+port[  57]=12
+
+story[ 58] = "...";
+path[  58,0] = 59;
+speak[ 58]="Holly"
+port[  58]=15
+
+story[ 59] = "...who am I kidding?\nI'll be helping grandmas turn on their computers all day long...\n...if they even know how to make a phone call...";
+path[  59,0] = 59;
+speak[ 59]="Holly"
+port[  59]=16
 }
