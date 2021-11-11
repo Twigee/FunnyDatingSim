@@ -321,7 +321,7 @@ speak[ 51]="Holly"
 port[  51]=1
 #endregion
 #endregion
-
+#region so you're homeless?
 story[ 52] = "Really what is wrong with you?\nYou're such a jerk!";
 path[  52,0] = 53;
 speak[ 52]="Holly"
@@ -357,8 +357,23 @@ path[  58,0] = 59;
 speak[ 58]="Holly"
 port[  58]=15
 
-story[ 59] = "...who am I kidding?\nI'll be helping grandmas turn on their computers all day long...\n...if they even know how to make a phone call...";
+story[ 59] = "Who am I kidding?\nI'll be helping grandmas turn on their computers all day long...\n...if they even know how to make a phone call...";
 path[  59,0] = 59;
 speak[ 59]="Holly"
 port[  59]=16
+#endregion
+
+story[ 59] = "So what brings you here?";
+path[  59,0] = 59;
+speak[ 59]="Holly"
+port[  59]=0
+
+story[ 60] = "";
+port[  60]=0
+choice[60,0] = "I come here\ndaily";
+choice[60,1] = "What?\nCan't I have a cup of\ncoffee?";
+path[  60,0] = 39;
+path[  60,1] = 52;
+res[   60,0]=3;
+res[   60,1]=6;
 }
