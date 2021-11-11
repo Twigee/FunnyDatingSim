@@ -255,7 +255,7 @@ port[  40]=1
 choice[40,0] = "Oh so you can\nhack my\nworst enemy?";
 choice[40,1] = "Finally\nsomebody can fix\nmy printer!";
 path[  40,0] = 41;
-path[  40,1] = 30;
+path[  40,1] = 60;
 res[   40,0]=3;
 res[   40,1]=4;
 
@@ -305,7 +305,7 @@ speak[ 48]="Holly"
 port[  48]=21
 
 story[ 49] = "...";
-path[  49,0] = -1;
+path[  49,0] = 59;
 speak[ 49]="Holly"
 port[  49]=20
 #endregion
@@ -316,13 +316,13 @@ speak[ 50]="Holly"
 port[  50]=8
 
 story[ 51] = "Wow! Thanks!";
-path[  51,0] = 52;
+path[  51,0] = 59;
 speak[ 51]="Holly"
 port[  51]=1
 #endregion
 #endregion
 #region so you're homeless?
-story[ 52] = "Really what is wrong with you?\nYou're such a jerk!";
+story[ 52] = "What is wrong with you?\nYou're such a jerk!";
 path[  52,0] = 53;
 speak[ 52]="Holly"
 port[  52]=12
@@ -358,22 +358,157 @@ speak[ 58]="Holly"
 port[  58]=15
 
 story[ 59] = "Who am I kidding?\nI'll be helping grandmas turn on their computers all day long...\n...if they even know how to make a phone call...";
-path[  59,0] = 59;
+path[  59,0] = 63
 speak[ 59]="Holly"
 port[  59]=16
 #endregion
 
-story[ 59] = "So what brings you here?";
-path[  59,0] = 59;
-speak[ 59]="Holly"
-port[  59]=0
+story[ 60] = "I said software programmer not tech support...";
+path[  60,0] = 61;
+speak[ 60]="Holly"
+port[  60]=14
 
-story[ 60] = "";
-port[  60]=0
-choice[60,0] = "I come here\ndaily";
-choice[60,1] = "What?\nCan't I have a cup of\ncoffee?";
-path[  60,0] = 39;
-path[  60,1] = 52;
-res[   60,0]=3;
-res[   60,1]=6;
+story[ 61] = "And believe me, I wouldn't spend the entire day explaining you how to turn on your darn printer.";
+path[  61,0] = 62;
+speak[ 61]="Holly"
+port[  61]=15
+
+story[ 62] = "Even if I wanted, I don't think I'm very good fixing problems without being able to control everything.";
+path[  62,0] = 63;
+speak[ 62]="Holly"
+port[  62]=22
+
+story[ 63] = "So, what brings you here?";
+path[  63,0] = 64;
+speak[ 63]="Holly"
+port[  63]=2
+
+story[ 64] = "";
+port[  64]=0
+choice[64,0] = "I come here\ndaily";
+choice[64,1] = "What?\nCan't I have a cup of\ncoffee?";
+path[  64,0] = 39;
+path[  64,1] = 65;
+res[   64,0]=3;
+res[   64,1]=6;
+
+story[ 65] = "I ran out of conversation ideas, outside of airplane food but that's too...   ...you know...";
+path[  65,0] = 66;
+speak[ 65]="Holly"
+port[  65]=7
+
+story[ 66] = "I have no idea if you have ever been in one of those.";
+path[  66,0] = 67;
+speak[ 66]="Holly"
+port[  66]=21
+
+story[ 67] = "Damn all this airplane food talk got me hungry.";
+path[  67,0] = 68;
+speak[ 67]="Holly"
+port[  67]=22
+
+story[ 68] = "Hey, do you have any food suggestions in here?";
+path[  68,0] = 70;
+speak[ 68]="Holly"
+port[  68]=0
+
+#region 69
+/*
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOOOZZ$$$ZZMMMMMOOZOOMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$8888O$$$$$$$OOO88$$$$$ZZOMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ZZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOOZZ$$$$$$$$$$$OO$$$$$OO$$$$$$$$$$$$$$$OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO$$$$$$$$$O$$$$$$$$$$$$$$$OOZZ$$$$$$$$$$$ZZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$$$$$Z$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$OOMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ZZ$$$$$$$$$$$$ZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZ$$$$Z$$$$$$$$$$$$$$$$$$$$$$$$$ZZ$$$$$$$$$$$$$$$$$$OOMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Z$$$$$$$ZZ$$$$$$$$$$$$$ZZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$8MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZZZ$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ88$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ZZ$$$$$$$$$$$$$ZZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZZZ$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO$$$$$$$ZZ$$$$$$$$OO$$$$$$$$$$$$$$$$$$$$$$$$$$ZZ$$$$$$$$$$$$$$$88MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZZZ$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$$OO$$$$$$$$$$ZZ$$$$$$$$$$$$$$$$$$$$$OO$$OOO$$$$$$$$$$$$$$$ZZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZZZ$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$$OO$$$$$$$$$$ZZ$$$$$$$$$$$$$$$$$$$$$OO$$OOO$$$$$$$$$$$$$$$ZZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOOOOZZZZ$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$$$$$$ZZ$$$$$$$$OO$$$$$$$$$$$$$$$$$$$$$$:$$88?~~??$$$$$$$$$$$$$$$8MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOOOOZZZZ$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$O$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$,,$$$,,,,,~~Z$$$$$$$$$$$$$$ZMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOOOOZZZZ$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$$$$$$$Z$$$$$$$$$Z$$$$$$$$$$$$$$$$$$$O~~$$$,,,,,,,,,NZZ$$$$$$$$$$OO$OOMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOOOOZZZZ$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO$$ZZ$$$$$$$$$$$$$$$O$$$$$$$$$$$$$$$$$OO:$$88~,,,,,,,,,,$$$$$$$$$$$$$$$ZZMMMMMMMMMMMMMMMMMMMMMMMOOOOZZZZ$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZ$$$$$$$ZZ$$$$$$$$$$O$$$$$$$$$$$$$$$~~OO$~~,,,,,,,,,,,,,~~$$$$$ZZ$$$$$$$$88MMMMMMMMMMMMMMMMMMMMMOOOOZZZZ$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$$$$$$$$$$$$$$ZZ$$$$$$$$$$$$$??,$$$$~,,,,,,,,,,,,,,,,,NN$$$$$$$$$$Z$$OOMMMMMMMMMMMMMMMMMMMMMOOOOZZZZ$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$$$$$$OO$$$$$$$$$$ZZ$$$$$$$$$$$OO$$~,,,,,,I~,O8~,,,,,,,,,,==Z$$$$$$$$$$$$ZZMMMMMMMMMMMMMMMMMMMMMOOOOZZZZ$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$$$$ZZ$$$$$$$$ZZ$$O$$$$$$$$$O~~,,,,,,,,,,,,,,,,,N,,,,,,,OOO$$$$Z$$$$$$$$$8MMMMMMMMMMMMMMMMOOOO$$$$$$$$$$$$$$$$$$$$OOOO
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$$$$$$OOOO$$$$$7~$OOOZZOO?~~,,,,,,,,,,,,,,,,,,,,,,,,,$,,,,,,$ZZ$$$$$$$$ZZ$$OMMMMMMMMMMMMMMMMOOOO$$$$$$$$$$$$$$$$$$$$OOOO
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$$$$$$$$$$$$$$~$$8OO$$?~~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8$$$$$ZZ$$$$$$$ZMMMMMMMMMMMMMMMMOOOO$$$$$$$$$$$$$$$$$$$$OOOO
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$OO$$O$$$$ZOO$$O??,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,=$$ZZ$OO$$$$$$$ZMMMMMMMMMMMMMMMMOOOO$$$$$$$$$$$$$$$$$$$$OOOO
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$OO$$O$$$$$OOOO~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,OOZZ$$$ZZ$$$$$$OOMMMMMMMMMMZZZZ$$$$$$$$$$$$ZZZZ$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$$$OOO???$$:::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$OO$$$$$$$$$$OO$ZZMMMMMMMMMMZZZZ$$$$$$$$$$$$ZZZZ$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$$$$$$$O??~~$????:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,O$$$$$$$$$Z$$$$$OOMMMMMMMMMMZZZZ$$$$$$$$$$$$ZZZZ$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$O$$$$$~~$$=,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$$$$?$$OO$$$$$$$$OOMMMMMMMMZZZZ$$$$$$$$$$$$ZZZZ$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$O$$$$$~~$$=,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,~,,,,,,,,,,,,,,,$$$$?$$OO$$$$$$$$OOMMMM$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$O$$$$O$$OO,,,,,,,,,,,~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,OO~~:??OO8$$$$$$$OOMMMM$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$88$$O,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:8NNNNNNNN88Z,,,,,,,,,::,??$$8ZZ$$$$$ZZMMMM$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO$$$$$$$~~?,,,,,,ON~NNNNNNN8NN~,,,,,,,,,,,,,,,=NZNNNNZ887,OI,,,,,,~~II,II$$O$$$$$$$$$ZMMM$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8$$$$$$$~~?,,,,,:88N888NNNNN88,,,,,,,,,,,,,,,,,:78NNN77IZ,O,,,,,,:????,OO$$$OOOOZ$$$$ZZZZ$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZ$$$$$$$,,?,,,,,,O,,,Z$NNNN7Z$,,,,,,,,,,,,,,,,N7=7====7,,,O,,,,,,:????,OO$$$OO$$$$$$$OZZZ$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$88$$$$$,,?$$,,,,Z,,,$7==8===,,,,,,,,,,,,,,,,,,O==~:~==:,,,,,,,,,~??==,OO$$ZOONN$$$$$ZZZZ$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$88$$$OO~~I~~,,,,::,,$==~~~===,,,,,,,,,,,,,,,,,,,ZNN87,,,,,,,,,,,???~~:OOZZNOOOOO$$$$$OOZ$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$88OO$OO??~,,::,,,,,,,7=~~IZ~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,I,,,,OOOOO888OOOZZ$$$ZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$OOOO$OOOO~::??,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,==,==OOOOOOOONNOOOOO$$$$$OO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$OOOO$OOOOO~~??,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,~OOOOOOOOOOOOOOOOO$$$$$ZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$8OOOO$OOOOOOO~~O,,,,,,,,,,,,,,,,,,,,,,,~,,,,,,,,,,,,,,,,,,,,,==OOOOOOOOOOOOOOOOOOOO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$O88OO$OOOOOOOOO:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,OOOOOOOOOOOOOOOOOOOOOO$$$$$$$O$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$$OOOOOZ88OOOOOOOO??,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,=OOOOOOOOOOOOOOOOOOO8OOZZ$$$$$Z$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$OOOOOZOOOOOOOOOOOO,,,,,,,,,,,,,,,,,==========,,,,,,,,,,,,,,,OOOOOOOOOOOOOOOOOOOOONNOO$$$ZZ$ZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$OOOZZOOOOOOOOOOONN~~,,,,,,,,,,,,,,===========,,,,,,,,,,,,,~~OOOOOOOOOOOOOOOOOOOOO88ZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$OOOZZOOOOOOOOOOONN~~,,,,,,,,,,,,,,$=~~~:::~~~,,,,,,,,,,,,,~~OOOOOOOOOOOOOOOOOOOOO88ZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$OOOZZOOOOOOOOOOOOOOO,,,,,,,,,,,,,,,:::::::::,,,,,,,,,,,,~~88OOOOOOOOOOOOOOOOOOOOOOOOO$$$$$$$$OO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMZZ$$$$$OOO$$OOOOOOOOOOOOO887::,,,,,,,,,,,,,::~::~~,,,,,,,,,,,,,OOOOOOOOOOOOOOOOOOOOOOOOOOOOO$$$$$$$$ZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$ZZ8OO$$OOOOOOOOOOOOOOOOOO~~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,=OOOOOOOOOOOOOOOOOOOOOOOOOOOOO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMZZ$$$$$OO8OO$$OOOOOOOOOOOOOOOOOOOO=,,,,,,,,,,,,,,,,,,,,,,,,,,,~~=NNOOOOOOOOOOOOOOOOOOOOOOOOOOO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMOOO$$$$$OOOOOZZOOOOOOOOOOOOOOOOOOOOOOO::,,,,,,,,,,,,,,,,,,,,:=====88OOOOOOOOOOOOOOOOOOOOOOOOOOO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMZ$$$$$$$88O88OOOOOOOOOOOOOOOOOOOOOOOOOOO=,,,,,,,,,,,,,,,,,~~======NNOOOOOOOOOOOOOOOOOOOOOOOOOOO$$$$$$$$$$O$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMO$$$$$$$OOOZZOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO==,,,,,,,,,,,==========NNOOOOOOOOOOOOOOOOOOOOOOOOO88$$$$$$$$$$N$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMO$$ZZ$$$88OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO=~~::,::~~===========8888OOOOOOOOOOOOOOOOOOOOOOONN$$$$$Z$$OO8Z$$$$$$$$$$$$$$$$$$$$OOOO$$$$
+MMMMMMMMMMMMMMMMMMMMMMMNNO$$OO$$$$$Z88OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO=====================NN88OOOOOOOOOOOOOOOOOOOOOOOZZ$$$$$Z$$88NZ$$$$$$$$$$$$$$$$$$$$OOOO$$$$
+MMMMMMMMMMMMMMMMMMMMMMM88OOO$$$$$$$OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO=====================88OOOOOOOOOOOOONNNNOZZOOOOO$$$$$$$O$$OOZZ$$$$$$$$$$$$$$$$$$$$OOOO$$$$
+MMMMMMMMMMMMMMMMMMMMMMMNNO88$$$$$$$8OOOOO88OOOOOOOOOOOOOOOOOOOOOOOOOOO7====================88NNOOO88MMM88OOOOO8$$OOZOO$$$$$$$O88$$ZZ$$$$$$$$$$$$$$$$$$$$OOOO$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMM8OOZZ$$$$$ZOO88ZOOZZOOOOOOOOOOOOOOOOOOOO8MM887====================8888NMMMMMMMMOOZZ$$$$$$$O$$$$$$$$$8OO$$$$$$$$$$$$$$$$$$$$$$$$ZZZZ$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMNOOOO$$$$$$$$$$$$$OOOOO88N88OO8NNOOO8888M8888N===================~88888NNMMMMMMOOOO$$O88$$$$$$$$$$$$NOO$$$$$$$$$$$$$$$$$$$$$$$$ZZZZ$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMM88OO8OOZZ$$$$$O$$88888NN8NNMMM8888MNNMM888888=================~~:NN8888888NMMMOOOO$$$$$$$$$$$$8NNOOOOO$$$$$$$$$$$$$$$$$$$$$$$$ZZZZ$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOOOMMN88OOMMMMMMMMMMMMMMMMMMMMMNN88N88888===============~~:::,,8888888888NNOOO$$$$$$$$$$$$$$$$OOOO$$$$$$$$$$$$$$$$$$$$$$$$ZZZZ$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNN888NNNNN88888NN88888?~~==========~~:::,,,,,::88888888888NN$$$$$$$$$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$$$$$OOOO$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNN888NNNNN88888NN88888?~~==========~~:::,,,,,::88888888888NN$$$$$$$$$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$$$$$OOOO$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM888888888N8888888888NN~~:::~~======~~:::,,,,,,,,,888OOO8888OOONN88888O$$OOO$$$ZZZZ$$$$$$$$$$$$$$$$$$$$OOOO$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNO88888NN88888OOOOONN,,,,,,:::::~~~~:::,,,,,,,,,,,,8OOOOOOOOOO$$$$$$$$$$$$$$$OO$ZZZZ$$$$$$$$$$$$$$$$$$$$OOOO$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$OOONN8OOOOOOOOO8,,,,,,,,,,,,,,:::::,,,,,,,,,,,,,,,OOOOOOOO$$$$$$$$$$$$$$$$$88888$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN$$$$$$$OOOOOOOOOOOO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,OOOOO$$$$$$$$$$$$$$$$$$88OOOOON$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO$$$$$$$OO$OOOOOOOOO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,OOO$$$$$$$$$$$$$$$OO$88$$$$$$$OOO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO$$$$$$$OO$$$$$OOO88,,,,,:,,,,,,,,,,,,,,,,,,,,,,,,:,,,,O$$$$$$$$$$$$$$$88$$$$$$$$$$$$OOO88$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM88$$O$$$$$$$$$$$$$$$OOOO,,,,,,,,,,,,,,,,,,,,,,,,,:::,,,,,OOO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$OOOOO$$$$$$$$$$$$$$ZZZZ$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$OO$$$OO$$$$$$$$$$~~,,,,,,,,,,:,,,,,,,,,:,,,,,,,,,,,,OO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$OOOOO$$$$$$$$$$$$$$ZZZZ$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$$$$OO$88$$$$$$$$$$,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$OOOOO8$$$$$$$$$$$$$ZZZZ$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$$$$OO$NN$$$$$$$$$$,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,~~$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$OOOOON$$$$$$$$$$$$$ZZZZ$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNN$$$$$$$$$$NOO$$$$$$$$$$,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,OO$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$OOOOO8$$$$$$$$$$$$$OOOO$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$$$$$$$$O$$$$$$$$$O$$$$,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$$$$$$$$$$$$$$O$$$$$$$$$$$$$$$$$$$OOOOOO$$$$$$$$$$$$$OOOO$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$$$$$$$$O$$$$$$$OO$$$$$=,,,,,,,,,,,,,,,,,,,,,,,,,,,,,N$$$$$$$$$$$$OO$$$$$$$$$$$$$$$$$$OOOOONNO88$$$$$$$$$$$OOOO$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNN$$O$$$$$$$$$$88$$$$$$$$$$$$$==,,,,,,,,,,,,,,,,,,,,,,,,,NNO$$$$$OO$$$OO$$$$$$$$$$$$$$$$$$$$OOOOOOOONN$$$$$$$$$$$OOOO$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNN$$$$$$$$$$$$$OONN$$$$$$$$$$=::==$,,,,,,,,,,,,,,,,,,,=$$$$$$$$$$$$$$N$$$$$$$$$$$$$$$$$$$$$$OOOOOOOONN$$$$$$$$$$$OOOO$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNN$$$$$$$$$$$$$OONN$$$$$$$$$$=::==$,,,,,,,,,,,,,,,,,,,=$$$$$$$$$$$$$$N$$$$$$$$$$$$$$$$$$$$$$OOOOOOOONN$$$$$$$$$$$OOOO$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$88$$$$$$$$$$NN$$$$$$$$$$=:::::==,,,,,,,,,,,,,~~$$$==ZZ$$$$$$$$OON$$$$$$$$$$$$$$$$$$$$OOOOOOOOOO88$$$$$$$$$$$OOOO$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$88$$$$$$$$$$OOO$$$$$$$ZZ:~~:::::::=,,,,,,,,,===$$:==$$$$$$$$$$88$$$$$$$$$$$$$$$$$$$$N$$OOOOOOOO88$$$$$$$$$$$OOOO$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$$$$$OO$$$$$$$$$$NNO$$$$$$$==:::::::::::::==,::=====~~:::OO$$$$$$NNNNO$$$$$$$$$$$$$$$$$OO$OOOOOOOOOO$$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$OO$$$$$$OOOOO$$$$$$$:::::::~:::::::~~========:::::OO$$$$$OOO888$$$$$$$$$$$$$$$$$$$$OOOOOOOOOO$$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$88$$$$$$NN$$O$$$$$$$:::::::::::::::::=====~:::::::$$$$$$$NOOOOO$$$$$$$$$$$$$$$$$$$$OOOOOOOOOO$$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNOOOO$$$$$$$$$$$OO$$O$$$$$$$::::::::~~:::::::===~~::::::::::$$$$$O$$OO$$$$$$$$$$$$$$$$$$$$OOOOOOOOOOO$$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8OOOO$$$$$$$$$$$$$$$O$$$$$$$:::::::::::::::~~===::::::::::::$$$OOO$$$$$$$$$$$$$$$$$$$$$$$$OOOOOOOOOOO$$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+NN,,,NNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNN,,,,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNNNNNNNN,,,NNN
+NN,,,,,,NNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNNNNNNNNNNNNNN
+NN,,,NNN,,,NNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNN,,,NNNNNNNNN
+NN,,,NNN,,,NNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNN,,,NNNNNNNNN
+NN,,,NNNNNN,,,,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNNNNNNNNNNNNNN
+NN,,,NNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,,,,NNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNNNNNNNN,,,NNN
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+*/
+#endregion
 }
