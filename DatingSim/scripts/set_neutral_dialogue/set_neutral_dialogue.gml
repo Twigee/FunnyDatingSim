@@ -381,23 +381,24 @@ port[  62]=22
 story[ 63] = "So, what brings you here?";
 path[  63,0] = 64;
 speak[ 63]="Holly"
-port[  63]=2
+port[  63]=0
 
 story[ 64] = "";
 port[  64]=0
 choice[64,0] = "I come here\ndaily";
 choice[64,1] = "What?\nCan't I have a cup of\ncoffee?";
-path[  64,0] = 39;
+path[  64,0] = 70;
 path[  64,1] = 65;
 res[   64,0]=3;
 res[   64,1]=6;
 
+#region what?
 story[ 65] = "I ran out of conversation ideas, outside of airplane food but that's too...   ...you know...";
 path[  65,0] = 66;
 speak[ 65]="Holly"
 port[  65]=7
 
-story[ 66] = "I have no idea if you have ever been in one of those.";
+story[ 66] = "I have no idea if you have ever traveled in an airplane.";
 path[  66,0] = 67;
 speak[ 66]="Holly"
 port[  66]=21
@@ -408,9 +409,10 @@ speak[ 67]="Holly"
 port[  67]=22
 
 story[ 68] = "Hey, do you have any food suggestions in here?";
-path[  68,0] = 70;
+path[  68,0] = 75;
 speak[ 68]="Holly"
 port[  68]=0
+#endregion
 
 #region 69
 /*
@@ -502,13 +504,54 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMOO$$$$$88$$$$$$NN$$O$$$$$$$:::::::::::::::::=====
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNOOOO$$$$$$$$$$$OO$$O$$$$$$$::::::::~~:::::::===~~::::::::::$$$$$O$$OO$$$$$$$$$$$$$$$$$$$$OOOOOOOOOOO$$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8OOOO$$$$$$$$$$$$$$$O$$$$$$$:::::::::::::::~~===::::::::::::$$$OOO$$$$$$$$$$$$$$$$$$$$$$$$OOOOOOOOOOO$$$$$$$$$ZZZZ$$$$$$$$$$$$$$$$
 NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
-NN,,,NNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNN,,,,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNNNNNNNN,,,NNN
+NN,,,,,NNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,,,,,,,,,,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,,,,,,,,,,,,,,,NNN
 NN,,,,,,NNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNNNNNNNNNNNNNN
+NN,,,NN,,,NNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,======°°°NNNNNNNNN
 NN,,,NNN,,,NNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNN,,,NNNNNNNNN
-NN,,,NNN,,,NNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNN,,,NNNNNNNNN
-NN,,,NNNNNN,,,,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNNNNNNNNNNNNNN
-NN,,,NNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,,,,NNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNNNNNNNN,,,NNN
+NN,,,NNNNN,,,N,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,NNNNNNNNNNNNNNNNNN
+NN,,,NNNNNNN,,,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,,,,,,,,,,,,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,,,,,,,,,,,,,,,,,NNN
 NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 */
 #endregion
+
+#region I come here daily
+story[ 70] = "Oh, every single day?";
+path[  70,0] = 71;
+speak[ 70]="Holly"
+port[  70]=3
+
+story[ 71] = "So you got like, coffee friends?";
+path[  71,0] = 72;
+speak[ 71]="Holly"
+port[  71]=1
+
+story[ 72] = "What am I talking about this isn't a bar!";
+path[  72,0] = 73;
+speak[ 72]="Holly"
+port[  72]=2
+
+story[ 73] = "So, since you come here often, do you have any food suggestions?";
+path[  73,0] = 74;
+speak[ 73]="Holly"
+port[  73]=1
+
+story[ 74] = "You do NOT want to see me with hunger.";
+path[  74,0] = 75;
+speak[ 74]="Holly"
+port[  74]=10
+#endregion
+
+story[ 75] = "";
+port[  75]=0
+choice[75,0] = "The cheesecake\nhere tastes\nvery good!";
+choice[75,1] = "Just order\ncoffee";
+path[  75,0] = 76;
+path[  75,1] = 65;
+res[   75,0]=3;
+res[   75,1]=6;
+
+story[ 76] = "Ooh! I love cheesecake!";
+path[  76,0] = 77;
+speak[ 76]="Holly"
+port[  76]=3
 }
