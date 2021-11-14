@@ -91,3 +91,4 @@ if cur_story>=75 and audio_is_playing(bgmDating)
 {
 	audio_sound_pitch(bgmDating,audio_sound_get_pitch(bgmDating)-0.0000125)
 }
+

@@ -12,7 +12,7 @@ draw_set_alpha(por_alpha)
 draw_sprite(sprDarkportrait,0,160,128)
 draw_set_alpha(1)
 }
-if cur_story=8 and !audio_is_playing(bgmDating) audio_play_sound(bgmDating,1,true)
+if cur_story=8 and !audio_is_playing(bgmDating) music=audio_play_sound(bgmDating,1,true)
 if cur_story>=8
 {
 	var vol=audio_sound_get_gain(bgmDating)
@@ -113,3 +113,13 @@ if keyboard_check_pressed(vk_f1)
 if keyboard_check_pressed(vk_f2) draw_stuff = !draw_stuff
 
 pos1+=(0-pos1)*0.25
+
+if music!=-1
+{
+	if keyboard_check(vk_f3)
+	{
+		if (current_time/4)==floor(current_time/4) audio_sound_set_track_position(music, lastpos)
+		draw_sprite(sprGlitchCheapJumpscare,0,0,0)
+	}
+	else lastpos=audio_sound_get_track_position(music)
+}

@@ -9,6 +9,9 @@ choices = 2;
 
 global.bgm=true
 
+music=-1
+lastpos=0
+
 var i;
 for (i = 0; i < 1024; i += 1)
 {

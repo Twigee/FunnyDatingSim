@@ -4,6 +4,7 @@
     {"id":{"name":"fOptions","path":"fonts/fOptions/fOptions.yy",},"order":2,},
     {"id":{"name":"sprTextbox2","path":"sprites/sprTextbox2/sprTextbox2.yy",},"order":6,},
     {"id":{"name":"set_neutral_dialogue","path":"scripts/set_neutral_dialogue/set_neutral_dialogue.yy",},"order":0,},
+    {"id":{"name":"sprGlitchCheapJumpscare","path":"sprites/sprGlitchCheapJumpscare/sprGlitchCheapJumpscare.yy",},"order":14,},
     {"id":{"name":"sprLoveMeterMarker","path":"sprites/sprLoveMeterMarker/sprLoveMeterMarker.yy",},"order":1,},
     {"id":{"name":"sprGlitchBackground","path":"sprites/sprGlitchBackground/sprGlitchBackground.yy",},"order":12,},
     {"id":{"name":"sprTextbox","path":"sprites/sprTextbox/sprTextbox.yy",},"order":2,},
