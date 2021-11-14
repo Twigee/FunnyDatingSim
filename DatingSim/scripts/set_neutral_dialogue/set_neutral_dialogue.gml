@@ -553,5 +553,15 @@ res[   75,1]=6;
 story[ 76] = "Ooh! I love cheesecake!";
 path[  76,0] = 77;
 speak[ 76]="Holly"
-port[  76]=3
+port[  76]=2
+
+story[ 77] = "I'll sure try them!";
+path[  77,0] = 77;
+speak[ 77]="Holly"
+port[  77]=3
+
+story[ 78] = "I'll sure try them!";
+path[  78,0] = 77;
+speak[ 78]="Holly"
+port[  78]=3
 }

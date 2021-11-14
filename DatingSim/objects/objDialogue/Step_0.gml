@@ -86,3 +86,8 @@ if global.LoveMeter>4 global.LoveMeter=4
 
 if global.RealMeter<0 global.RealMeter=0
 if global.RealMeter>4 global.RealMeter=4
+
+if cur_story>=75 and audio_is_playing(bgmDating)
+{
+	audio_sound_pitch(bgmDating,audio_sound_get_pitch(bgmDating)-0.0000125)
+}
