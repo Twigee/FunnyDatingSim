@@ -13,4 +13,4 @@ if window_get_fullscreen()
 	mx=mouse_x
 	my=mouse_y
 }
-if !keyboard_check(vk_f3) draw_sprite(sprMouse,0,mx,my)
+if glitch==false draw_sprite(sprMouse,0,mx,my)

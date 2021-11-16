@@ -4,7 +4,7 @@ lmdraw=global.LoveMeter
 global.RealMeter=global.LoveMeter
 cur_story = 0;
 char = 0;
-text_speed = 1;
+text_speed = 0.5;
 choices = 2;
 
 global.bgm=true
@@ -20,35 +20,8 @@ for (i = 0; i < 1024; i += 1)
 	res[i,0]=0
 	res[i,1]=0
 }
-/*
-story[ 0] = "Hi I'm a random girl lol";
-path[  0,0] = 1;
-speak[ 0]="Random girl"
 
-story[ 1] = "";
-choice[1,0] = "Be nice";
-choice[1,1] = "Be a jerk";
-path[  1,0] = 2;
-path[  1,1] = 3;
-res[   1,0]=1;
-res[   1,1]=2;
-
-story[ 2] = "Oh wow you're very nice :smirk:";
-path[  2,0] = 1;
-port[  2]=2
-speak[ 2]="Random girl"
-
-story[ 3] = "What a fucking jerk!";
-path[  3,0] = 4;
-port[  3]=12
-speak[ 3]="Random girl"
-
-story[ 4] = "Let's get married!";
-path[  4,0] = 1;
-port[  4]=2
-speak[ 4]="Your wife lmfao"
-*/
-//3 12 2
+path=0
 
 set_neutral_dialogue()
 
@@ -72,3 +45,8 @@ pos1=45
 pos2=-45
 
 draw_stuff=true
+
+glitch=false
+gtime=0
+
+intended_error=false

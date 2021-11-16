@@ -116,9 +116,9 @@ pos1+=(0-pos1)*0.25
 
 if music!=-1
 {
-	if keyboard_check(vk_f3)
+	if glitch==true
 	{
-		if (current_time/4)==floor(current_time/4) audio_sound_set_track_position(music, lastpos)
+		if (current_time/2)==floor(current_time/2) audio_sound_set_track_position(music, lastpos)
 		draw_sprite(sprGlitchCheapJumpscare,0,0,0)
 	}
 	else lastpos=audio_sound_get_track_position(music)

@@ -17,7 +17,7 @@ path[  2,0] = 3;
 speak[ 2]=""
 port[  2]=-2
 
-story[ 3] = "It's getting late, and you could just walk away right now.\nWell, you still want that coffee cup you ordered...\n...I guess you'll have to wait.";
+story[ 3] = "You already had all you wanted so it's time to head out.";
 path[  3,0] = 4;
 speak[ 3]=""
 port[  3]=-2
@@ -316,7 +316,7 @@ speak[ 50]="Holly"
 port[  50]=8
 
 story[ 51] = "Wow! Thanks!";
-path[  51,0] = 59;
+path[  51,0] = 63;
 speak[ 51]="Holly"
 port[  51]=1
 #endregion
@@ -390,7 +390,7 @@ choice[64,1] = "What?\nCan't I have a cup of\ncoffee?";
 path[  64,0] = 70;
 path[  64,1] = 65;
 res[   64,0]=3;
-res[   64,1]=6;
+res[   64,1]=4;
 
 #region what?
 story[ 65] = "I ran out of conversation ideas, outside of airplane food but that's too...   ...you know...";
@@ -546,22 +546,127 @@ port[  75]=0
 choice[75,0] = "The cheesecake\nhere tastes\nvery good!";
 choice[75,1] = "Just order\ncoffee";
 path[  75,0] = 76;
-path[  75,1] = 65;
+path[  75,1] = 87;
 res[   75,0]=3;
-res[   75,1]=6;
+res[   75,1]=4;
 
 story[ 76] = "Ooh! I love cheesecake!";
 path[  76,0] = 77;
 speak[ 76]="Holly"
 port[  76]=2
 
-story[ 77] = "I'll sure try them!";
-path[  77,0] = 77;
+story[ 77] = "Of course I'll try it!";
+path[  77,0] = 78;
 speak[ 77]="Holly"
 port[  77]=3
 
-story[ 78] = "I'll sure try them!";
-path[  78,0] = 77;
+story[ 78] = "Excuse me! I'd like to order a cheesecake!";
+path[  78,0] = 79;
 speak[ 78]="Holly"
-port[  78]=3
+port[  78]=21
+
+story[ 79] = "Alright! I'll bring it in a moment.\nAnything else?";
+path[  79,0] = 80;
+speak[ 79]="Waiter"
+port[  79]=21
+
+story[ 80] = "That should be it, thanks.";
+path[  80,0] = 255;
+speak[ 80]="Holly"
+port[  80]=21
+
+story[ 255] = "...";
+path[  255,0] = 81;
+speak[ 255]="Holly"
+port[  255]=21
+
+story[ 81] = "Hey, do you believe in destiny?";
+path[  81,0] = 82;
+speak[ 81]="Holly"
+port[  81]=0
+
+story[ 82] = "";
+port[  82]=0
+choice[82,0] = "Yes";
+choice[82,1] = "No";
+path[  82,0] = 83;
+path[  82,1] = 65;
+res[   82,0]=0;
+res[   82,1]=0;
+#region choices
+story[ 83] = "Oh, me too!";
+path[  83,0] = 84;
+speak[ 83]="Holly"
+port[  83]=2
+
+story[ 84] = "But sometimes I wish I could control my own future.";
+path[  84,0] = 91;
+speak[ 84]="Holly"
+port[  84]=2
+
+story[ 85] = "Oh, I do but...";
+path[  85,0] = 86;
+speak[ 85]="Holly"
+port[  85]=2
+
+story[ 86] = "Sometimes I too want to believe that we control our own future.";
+path[  86,0] = 91;
+speak[ 86]="Holly"
+port[  86]=2
+#endregion
+#region from previous dialogue
+story[ 87] = "Fine whatever.\nI just need something right now.";
+path[  87,0] = 88;
+speak[ 87]="Holly"
+port[  87]=7
+
+story[ 88] = "Excuse me! I'd like to order a coffee!";
+path[  88,0] = 89;
+speak[ 88]="Holly"
+port[  88]=21
+
+story[ 89] = "Alright! I'll bring it in a moment.\nAnything else?";
+path[  89,0] = 90;
+speak[ 89]="Waiter"
+port[  89]=21
+
+story[ 90] = "That should be it, thanks.";
+path[  90,0] = 255;
+speak[ 90]="Holly"
+port[  90]=21
+#endregion
+
+story[ 91] = "Wait, what time is it?";
+path[  91,0] = 92;
+speak[ 91]="Holly"
+port[  91]=21
+
+story[ 92] = "Oh snap I have to go soon.\nI'll just get ready for when it's time to leave.";
+path[  92,0] = 93;
+speak[ 92]="Holly"
+port[  92]=9
+
+story[ 93] = "...";
+path[  93,0] = 94;
+speak[ 93]="Holly"
+port[  93]=10
+
+story[ 94] = "...where's my wallet";
+path[  94,0] = 95;
+speak[ 94]="Holly"
+port[  94]=11
+
+story[ 95] = "";
+port[  95]=11
+choice[95,0] = "I'll pay it";
+choice[95,1] = "I'll pay it\nbut I'll take it.";
+path[  95,0] = 96;
+path[  95,1] = 97;
+res[   95,0]=0;
+res[   95,1]=0;
+
+story[ 96] = "You check in your pockets and find you wallet.\nYou open it and you ha";
+path[  96,0] = 95;
+speak[ 96]=""
+port[  96]=11
 }

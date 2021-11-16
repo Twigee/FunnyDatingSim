@@ -24,7 +24,7 @@ for(var i=0; i<choices; i++){
 }
 //set story
 var str_len = string_length(story[cur_story]);
-if (input!=-1 && char>=str_len){
+if (input!=-1 && char>=str_len)and glitch=false{
     
 	#region option result
 	if res[cur_story,input]=1
@@ -71,9 +71,10 @@ if (input!=-1 && char>=str_len){
         if (room_exists(room_next(room))) room_goto_next();
         else room_restart();
     }
+	
 }
 if keyboard_check(vk_shift) text_speed=4
-else text_speed=1
+else text_speed=0.5
 
 if keyboard_check_pressed(ord("R"))
 {
@@ -92,3 +93,17 @@ if cur_story>=75 and audio_is_playing(bgmDating)
 	audio_sound_pitch(bgmDating,audio_sound_get_pitch(bgmDating)-0.0000125)
 }
 
+//Glitch (how ironic it starts at 96)
+if cur_story==96 and char=string_length(story[96]) glitch=true
+
+if glitch==true
+{
+	gtime+=1
+	if gtime>=60
+	{
+		audio_stop_all()
+		intended_error=true
+		//show_error("lol this is an error message",true)
+		deez=nuts
+	}
+}
